@@ -8,12 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quattrocento&family=Sora&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="container theme-1">
             <nav class="nav">
                 <a href="index.html" class="logo">Checked It.</a>
@@ -34,31 +42,193 @@
                 
             </nav>
         </div>
-    </header>
+    </header> -->
 
-    <section class="hero">
+    <!-- <section class="hero d-flex flex-column justify-content-center align-items-center">
+        <div class="static-txt">
+            We Are
+        </div>
         <div class="wrapper"> 
-            <div class="static-txt">
-                We Are
-            </div>
             <ul class="dynamic-txts">
-                <li>THE INNOVATION</li>
-                <li>THE REVOLUTION</li>
-                <li>THE FUTURE</li>
-                <li>CHECKED IT</li>
+                <li class="li1">THE INNOVATION</li>
+                <li class="li2">THE REVOLUTION</li>
+                <li class="li3">THE FUTURE</li>
+                <li class="li4">CHECKED IT</li>
             </ul>
         </div>    
+    </section> -->
+
+    <div class="nav_container">
+        <div class="row">
+            <div class="logo">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_xa0q7ly3.json"
+                    background="transparent" speed="1" style="width: 100px; height: 100px;" hover loop autoplay>
+                </lottie-player>
+                <div class="blue"></div>
+                <div class="purple"></div>
+            </div>
+            <header class="sidenav">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Blogs</li>
+                        <li>Resources</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero">
+                <div class="hero_img">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_yjrdpceb.json"
+                        background="transparent" speed="1" style="width: 600px; height: 400px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="cap_item">
+                    <div class="cap blue_"></div>
+                    <div class="cap purple_"></div>
+                    <div class="cap lite_"></div>
+                    <div class="cap dark_"></div>
+                </div>
+            </div>
+
+            <div class="content1">
+                <span>welcome to</span>
+                <h1>CHECKED<br>ED</h1>
+                <h4>by checked it</h4>
+                <p>
+                    learn from the best of the best
+                    <br> at the comfort of your home.
+                </p>
+                <div class="cta">
+                    check out what's new!
+                </div>
+            </div>
+
+            <div class="indicator">
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="blog">
+        <div class="blogopener">
+            <h1>WHAT'S POPPING?</h1>
+        </div>
     </section>
-    <section class="demo-content"></section>
-<!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script>
-        window.addEventListener('scroll', function () {
-            let header = document.querySelector('header');
-            let windowPosition = window.scrollY > 0;
-            header.classList.toggle('scrolling-active', windowPosition);
-        })
-    </script>
+    <section class="blog-sec">
+        <div class="content blog-floaters">
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 1 </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo deserunt et autem minima
+                        beatae
+                        ab eveniet, a, ullam molestiae nihil quidem suscipit porro officia expedita, magni temporibus
+                        reprehenderit. Odio, ducimus?</p>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 2 </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet quo consequatur. Optio
+                        maiores enim numquam. Et, tempore ex cupiditate vero dicta recusandae natus, exercitationem
+                        officiis
+                        quod, cumque accusamus cum.
+                    </p>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 3 </h2>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, architecto rem cumque eaque
+                        impedit recusandae, eius officiis porro ratione sunt est repudiandae quia cum id praesentium,
+                        asperiores.</p>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 4 </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis hic quae magnam eveniet
+                        excepturi
+                        vitae fuga, quidem corporis nobis ipsum, eius consequuntur molestias suscipit optio maiores,
+                        saepe
+                        facere dolores.</p>
+                </div>
+            </div>
+
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 5 </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis hic quae magnam eveniet
+                        excepturi
+                        vitae fuga, quidem corporis nobis ipsum, eius consequuntur molestias suscipit optio maiores,
+                        saepe
+                        facere dolores.</p>
+                </div>
+            </div>
+
+
+            <div class="services">
+                <div class="img">
+                    <img src="#" alt="blog1">
+                </div>
+                <div class="description">
+                    <h2>Blog 6 </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis hic quae magnam eveniet
+                        excepturi
+                        vitae fuga, quidem corporis nobis ipsum, eius consequuntur molestias suscipit optio maiores,
+                        saepe
+                        facere dolores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script>
+            window.addEventListener('scroll', function () {
+                let header = document.querySelector('header');
+                let windowPosition = window.scrollY > 0;
+                header.classList.toggle('scrolling-active', windowPosition);
+            })
+        </script>
 </body>
 
 </html>
