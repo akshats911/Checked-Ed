@@ -23,14 +23,24 @@ mainTL.from(["header", ".logo"],{
     duration: 0.5,
     ease: "power3.inOut"
 })
-mainTL.staggerFromTo("section", 1, {opacity:0}, {opacity:1});
+.from("#blog",{
+    // y: 200,
+    duration: 2,
+    opacity: 0,
+    ease: "power3.inOut"
+})
 
-ScrollTrigger.create({
-    trigger: ".blogopener",
-    start: "top center",
-    end: "+=3000px",
-    pin: true
-});
+// scrollTrigger.create({
+//         trigger: ".blog",    
+//         start: "center center",
+//         end: "bottom top",
+//         scrub: true,
+//         pin: true
+//     }
+// )
+// .from(".blogopener",{y:innerHeight*1.5})
+
+
 
 // const parlax = gsap.timeline({
 //     scrollTrigger: {
@@ -56,3 +66,16 @@ function windowResize(){
     let container_ = document.querySelector(".nav_container")
     container_.style.height = "100vh"
 }
+
+// DARK MODE
+// document.onkeypress = function(e){
+//     e = e || window.event;
+
+//     if(e.keyCode === 13){
+//         document.documentElement.classList.toggle("dark-mode");
+        
+//         document.querySelectorAll('.inverted').forEach((result) =>{
+//             result.classList.toggle('invert');
+//         })
+//     }
+// }
